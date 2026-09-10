@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究员后台 · 研究笔记</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>研究员后台</h1>
+      <div class="sub">维护课题、笔记章节、引用说明，并控制是否公开发布</div>
+      <nav>
+        <a href="/">公开目录</a>
+        <a href="/admin">研究员入口</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <button id="tab-notes">笔记管理</button>
+      <button id="tab-topics" class="secondary">课题管理</button>
+      <span class="muted">新建笔记默认私密，只有勾选“公开发布”后才会出现在公开目录。</span>
+    </div>
+
+    <div id="view-notes" class="admin-layout">
+      <section class="panel list-panel">
+        <div class="toolbar">
+          <button id="new-note" class="tiny">＋ 新建笔记</button>
+        </div>
+        <div id="note-list"><p class="loading">加载中…</p></div>
+      </section>
+      <section class="panel" id="note-editor">
+        <div class="empty">请选择左侧笔记，或新建一篇。</div>
+      </section>
+    </div>
+
+    <div id="view-topics" class="admin-layout" hidden>
+      <section class="panel list-panel">
+        <div class="toolbar">
+          <button id="new-topic" class="tiny">＋ 新建课题</button>
+        </div>
+        <div id="topic-list"><p class="loading">加载中…</p></div>
+      </section>
+      <section class="panel" id="topic-editor">
+        <div class="empty">请选择左侧课题，或新建一个。</div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">后台为本地维护工具：数据读写于本地 data/db.json，未做登录鉴权，请勿暴露到公网。</div>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="/common.js"></script>
+  <script src="/admin.js"></script>
+</body>
+</html>

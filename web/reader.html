@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究笔记 · 阅读</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>研究笔记发布台</h1>
+      <nav>
+        <a href="/">公开目录</a>
+        <a href="/admin">研究员入口</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="reader"><p class="loading">正在加载笔记…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">仅公开笔记可阅读；私密笔记与未发布草稿不可见。</div>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="/common.js"></script>
+  <script src="/reader.js"></script>
+</body>
+</html>

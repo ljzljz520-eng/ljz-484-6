@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究笔记 · 公开目录</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>研究笔记发布台</h1>
+      <div class="sub">只发布研究员标记为“公开”的课题笔记</div>
+      <nav>
+        <a href="/">公开目录</a>
+        <a href="/admin">研究员入口</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="catalog"><p class="loading">正在加载公开目录…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">研究笔记发布项目 · 数据保存在本地 data/db.json · 私密笔记不会出现在本页</div>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="/common.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>

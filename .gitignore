@@ -1,0 +1,13 @@
+# 编译产物
+bin/
+*.class
+
+# 运行时数据（首次启动会自动重建示例数据；如需保留自己的数据请取消下行注释）
+# data/db.json
+
+# 系统/编辑器
+.DS_Store
+.idea/
+.vscode/
+*.log
+data/db.json
